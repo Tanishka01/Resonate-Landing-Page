@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 }
 .cta{
     width: 150px;
-    height: 50px;
+    padding: 14px;
     border: 1.5px solid rgb(255, 98, 0);
     border-radius: 24px ;
     background-color: transparent;
@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
     content: "";
     height: 100vh;
     width: 100%;
-    background-image: url('27soCpyF4LhpsZeBNkM40-transformed 1.png');
+    background-image: url('27soCpyF4LhpsZeBNkM40-transformed 1 - Copy.png');
     background-size: cover; 
     background-position: center;
     position: absolute; 
@@ -132,7 +132,7 @@ nav{
 .dropdown .dropbtn{
     background: transparent;
     border: none;
-    color: white;
+    color: rgb(124, 123, 123);
     font-size: 20px;
     padding-left:20px;
     cursor: pointer;
@@ -149,7 +149,7 @@ nav{
     padding: 10px;
 }
 .dropdown-content a{
-    padding: 15px;
+    padding: 10px;
 }
 .dropdown:focus-within .dropdown-content{
     display: block;
@@ -176,7 +176,7 @@ nav{
     padding: 10px 40px;
     font-weight: 200;
     font-size: 16px;
-    line-height: 27px;
+    line-height: 1.5rem;
     z-index: 1;
     
 }
@@ -218,18 +218,18 @@ nav{
 
 .elevate{
     width: 100%;
-    max-height: 80vh;
     background-color: #15151585;
-    
+    align-items: center;
+    justify-content: center;
 
 }
 .elevate .header{
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
-    font-size: 50px;
+    font-size: 4vw;
     text-align: center;
-    padding: 150px 40px;
-    line-height: 80px;
+    padding: 120px 40px;
+    line-height: calc(1.5em + 1vw);
     background: linear-gradient(to right, #e3e3e3, #1b1a1a);
     -webkit-background-clip: text;
     background-clip: text;
@@ -269,8 +269,8 @@ nav{
 
 .products .card{
     scroll-snap-align: start;
-    min-width: 260px;    
-    min-height: 310px;
+    min-width: 280px;    
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     background-color: rgba(108, 108, 108, 0.2);
@@ -345,7 +345,7 @@ nav{
 }
 .card .see{
     width: 100px;
-    height: 45px;
+    padding: 10px;
     border: 1.5px solid rgb(255, 255, 255);
     border-radius: 24px ;
     background-color: transparent;
@@ -475,7 +475,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     max-width: 560px;
-    height: fit-content;
     margin: 20px;
     color: white;
 }
@@ -498,7 +497,6 @@ nav{
 
 .category{
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -590,25 +588,25 @@ nav{
 
 .About{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     padding: 0 40px;
-    margin-top: 140px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .About .firstbox{
     display: flex;
     flex-direction: column;
     align-items: left;
     width: 50%;
-    height: 100%;
+    
 }
 .firstbox .aboutheader{
     color: white;
     font-size: 40px;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 3.5rem;
     font-family: 'Michroma';
 }
 .firstbox .abouttext{
@@ -623,7 +621,7 @@ nav{
     background-size: cover;
     background-position: center;
     width: 40%;
-    height: 80%;
+    height: 75%;
     background-color: aliceblue;
 }
 
@@ -634,11 +632,10 @@ nav{
     background-image: url('scott-major-ZP2iqHtUtyc-unsplash.jpg');
     background-position: top;
     background-size: cover;
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 70px;
 }
 .subscribe .subheader{
     
@@ -650,7 +647,6 @@ nav{
     margin: 80px;
     gap: 1rem;
     width: 50%;
-    height: 12%;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -733,11 +729,33 @@ nav{
 
 
 @media(max-width: 768px){
+    .cta{
+        width: 120px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .logo{
+        
+        font-size: 13px;
+        
+    }
+    nav{
+        padding: 30px 15px;
+        font-size: 11px;
+        font-weight: 100;
+        text-decoration: none;
+    }
     .navbar .centre{
         display: none;
     }
+    .right .search{
+        
+        font-size: 16px;
+        
+    }
     .right .dropdown{
         display: block;
+        z-index: 2;
     }
     .resonate{
         align-items: center;
@@ -745,63 +763,125 @@ nav{
     }
     
     .resonate .text2{
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
+        z-index: 1;
     }
     .resonate .cta{
-        transform: translate(0,10px);
-        z-index: 1;
-       
+        transform: translate(0,10px);   
+    }
+    .landing .social{
+        padding: 0 15px;
+    }
+    .social .follow{
+        font-size: 12px;
+        padding-right: 15px;
+    }
+    
+    .social .link{
+        font-size: 14px;   
     }
     .elevate .header{
-        font-size: 30px;
-        padding: 100px 40px;
-        line-height: 60px;
+        font-size: 6vw;
+        padding: 70px 15px;
+        
     }
     .best{
         padding: 0;
+        margin-top: 50px;
+    }
+    .products .card{
+        min-width: 170px;    
+        min-height: 180px;
+        padding: 10px 10px;
+    }
+    .cost .name{
+        font-size: 12px;
+    }
+    .price .ruppee{
+        font-size: 8px; 
+    }
+    .price .num{
+        font-size: 10px;
+    } 
+    .card .see{
+        width: 80px;
+        padding: 10px;
+        font-size: 10px;
     }
     .promotion{
-        height: 105vh;
+        height: 100vh;
+        margin-top: 90px;
     }
     .text-box{
-        min-width: 230px; 
+        min-width: 350px; 
+    }
+    .text-box .speaker{
+        font-size: 5.3vw;
+        padding-bottom: 10px;
     }
     .text-box .speaker-ft{
-        font-size: 14px;
+        font-size: 9px;
         font-weight: 400;
+        padding-bottom: 25px;
+    }
+    .text-box .cta{
+        font-size: 9px;
+        width: 90px;
+        padding: 5px;
     }
     .offer{
-        min-width: 220px;
-        padding: 0 20px;
-        transform: translate(0,135px);
+        min-width: 160px;
+        padding: 0 10px;
+        transform: translate(0,100px);
     }
     .offer .model{
-        font-size: 16px;
+        font-size: 10px;
     }
     .offer .model-ft{
-        font-size: 12px;
-        font-weight: 300;
+        font-size: 8px;
+        font-weight: 100;
     }
     .offer .price{
-        font-size: 12px;
+        font-size: 9px;
     }
     .offer .discount-price{
-        font-size: 14px;
+        font-size: 11px;
     }
     
     .category{
         padding: 0;
-        margin-top: 140px ;
+        margin-top: 100px ;
+    }
+    .slider .slide{
+        min-width: 200px;    
+        min-height: 220px; 
+    }
+    .slide .option{
+        width: 150px;
+        padding: 10px;
+    }
+    .option .opt-des{
+        font-size: 10px;
+        font-weight: 200;
     
     }
+    .option .opt-text{
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        padding-bottom: 8px;
+    }
+    
 
     .About{
         width: 100%;
-        height: 120vh;
-        margin-top: 90px;
+        height: 150vh;
+        padding: 0 15px;
+        margin-top: -50px;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .About .firstbox{
         align-items: center;
@@ -810,19 +890,23 @@ nav{
     }
     .firstbox .aboutheader{
         text-align: center;
+        font-size: 34px;
+        line-height: 3rem;
+        padding-bottom: 20px;
     }
     .firstbox .abouttext{
         text-align: center;
+        padding-bottom: 40px;
     }
     
     .About .secondbox{
         width: 100%;
-        height: 100%;
+        
     }
 
     .subscribe .input{
         margin: 120px;
-        width: 60%;  
+        width: 70%;  
     }
     .footer{
         width: 100%;
